@@ -32,6 +32,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let cell = UITableViewCell ()
         cell.textLabel?.text = name[indexPath.row]
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let nametag = name[indexPath.row]
+        performSegue(withIdentifier: "moveSegue", sender: nametag)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
     }
     
