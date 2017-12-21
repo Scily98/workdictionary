@@ -40,7 +40,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+     let defVC = segue.destination as! DefenitionViewController
+        defVC.name = sender as! String
     }
     
     

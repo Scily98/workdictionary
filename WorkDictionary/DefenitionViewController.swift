@@ -9,11 +9,17 @@
 import UIKit
 
 class DefenitionViewController: UIViewController {
-
+    @IBOutlet weak var nameLable: UILabel!
+    
+    var name = "no name"
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        nameLable.text = name
     }
 
     override func didReceiveMemoryWarning() {

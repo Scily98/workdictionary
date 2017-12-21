@@ -73,6 +73,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Tau-fl-Nf1"/>
                     </view>
+                    <connections>
+                        <outlet property="nameLable" destination="GWS-k2-nhW" id="3uA-94-hg5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NDa-Vi-0or" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
