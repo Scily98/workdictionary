@@ -12,6 +12,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     @IBOutlet weak var tableview1: UITableView!
    
+    var name = ["Dave", "Anton", "Mike", "Pete", "Al", "Amy", "Dawn", "Rich", "Ash", "Josh B", "Josh S", "Joe", "Scott"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,13 +23,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return name.count
         
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        print(indexPath.row)
         let cell = UITableViewCell ()
-        cell.textLabel?.text = "hello there"
+        cell.textLabel?.text = name[indexPath.row]
         return cell
         
     }
