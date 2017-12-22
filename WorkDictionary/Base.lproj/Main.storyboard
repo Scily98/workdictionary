@@ -74,6 +74,7 @@
                         <viewLayoutGuide key="safeArea" id="Tau-fl-Nf1"/>
                     </view>
                     <connections>
+                        <outlet property="defenitionLable" destination="7Te-Gm-ANE" id="wvu-aT-snW"/>
                         <outlet property="nameLable" destination="GWS-k2-nhW" id="3uA-94-hg5"/>
                     </connections>
                 </viewController>
