@@ -11,6 +11,8 @@ import UIKit
 class DefenitionViewController: UIViewController {
    
     @IBOutlet weak var defenitionLable: UILabel!
+    @IBOutlet weak var fullTimeLable: UILabel!
+    @IBOutlet weak var positionLable: UILabel!
     
     @IBOutlet weak var nameLable: UILabel!
     
