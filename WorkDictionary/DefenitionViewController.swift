@@ -66,7 +66,7 @@ class DefenitionViewController: UIViewController {
             positionLable.text = "Position: Stage Left"
         }
         if name == "Jake" {
-            defenitionLable.text = "Ranger"
+            defenitionLable.text = "Jakeyboyyy"
             fullTimeLable.text = "Catagory: Casual"
             positionLable.text = "Position: Stage Right"
         }
