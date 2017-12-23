@@ -12,7 +12,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     @IBOutlet weak var tableview1: UITableView!
    
-    var name = ["Dave", "Anton", "Mike", "Pete", "Al", "Amy", "Dawn", "Rich", "Ash", "Josh B", "Josh S", "Joe", "Scott"]
+    var name = ["Dave", "Anton", "Mike", "Pete", "Al", "Amy", "Dawn", "Rich", "Jake", "Josh B", "Josh S", "Scott"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
