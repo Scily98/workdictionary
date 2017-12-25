@@ -45,12 +45,19 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         defVC.name = sender as! String
     }
     
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    func makeNameArray() -> [String] {
+        var name1 = name()
+        name1.stringname = "Dave"
+    
+    }
+    
 }
+
+
+
 
