@@ -6,14 +6,12 @@
 //  Copyright © 2017 Morgan Gardiner. All rights reserved.
 //
 
-
-class Person {
-    var name = ""
-    var definition = ""
+class Crewmember {
+    var personname = ""
+    var defenitiion = ""
     var contract = ""
     var position = ""
 }
-
 
 
 
