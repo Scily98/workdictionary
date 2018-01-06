@@ -12,7 +12,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     @IBOutlet weak var tableview1: UITableView!
    
-    var namelist = ["Dave", "Anton", "Mike", "Pete", "Al", "Amy", "Dawn", "Rich", "Jake", "Josh B", "Josh S", "Scott"]
+    var namelist : [Crewmember] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +20,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         tableview1.dataSource = self
         tableview1.delegate = self
+        namelist = makeCrewmemberArray()
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -30,7 +31,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         print(indexPath.row)
         let cell = UITableViewCell ()
-        cell.textLabel?.text = namelist[indexPath.row]
+        let crewmember = namelist[indexPath.row]
+        cell.textLabel?.text = crewmember.personname
         return cell
     }
     
@@ -51,7 +53,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     
-    func makeCrewmemberArray() -> [String] {
+    func makeCrewmemberArray() -> [Crewmember] {
         let person1 = Crewmember()
         person1.personname = "Dave"
         person1.defenitiion = "The Boss Man"
@@ -123,6 +125,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         person12.defenitiion = "2 hotty scotty"
         person12.contract = "Fulltimer"
         person12.position = "Fly"
+        
+        return [person1, person2, person3, person4, person5, person6, person7, person8, person9, person10, person11, person12]
         
     }
     
